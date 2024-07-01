@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Equalizer Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e7d2d2;
+        }
+        .bar {
+            width: 20px;
+            height: 100px;
+            margin: 0 5px;
+            animation: bounce 1s infinite;
+        }
+        .bar1 {
+            animation-delay: 0s;
+            background-color: red;
+        }
+        .bar2 {
+            animation-delay: 0.1s;
+            background-color: blue;
+        }
+        .bar3 {
+            animation-delay: 0.2s;
+            background-color: yellow;
+        }
+        .bar4 {
+            animation-delay: 0.3s;
+            background-color: purple;
+        }
+        .bar5 {
+            animation-delay: 0.4s;
+            background-color: orangered;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                height: 100px;
+            }
+            50% {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+    <div class="bar bar4"></div>
+    <div class="bar bar5"></div>
+</body>
+</html>
